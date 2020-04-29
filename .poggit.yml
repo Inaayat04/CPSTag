@@ -1,0 +1,8 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/Inaayat04/CPSTag
+build-by-default: true
+branches:
+- master
+projects:
+  CPSTag:
+    path: ""
+...
