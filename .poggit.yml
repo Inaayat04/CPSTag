@@ -5,4 +5,6 @@ branches:
 projects:
   CPSTag:
     path: ""
+    lint:
+      phpstan: false
 ...
