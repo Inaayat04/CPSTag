@@ -12,7 +12,7 @@ use pocketmine\network\mcpe\protocol\InventoryTransactionPacket;
 use pocketmine\utils\Config;
 use Inaayat\CPSTag\CPSTagTask;
 
-class Main extends PluginBase implements Listener{
+class Main extends PluginBase implements Listener {
 
 	private $clicks;
 	
