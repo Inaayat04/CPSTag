@@ -15,7 +15,8 @@ class CPSTagTask extends Task{
 	
 	public function onRun(int $tick):void{
 		foreach($this->plugin->getServer()->getOnlinePlayers() as $players){
-			$cpstag = $this->plugin->config->get("CPSTag");
+			$this->config = new Config($this->plugin->getDataFolder() . "config.yml", Config::YAML);
+			$cpstag = $this->config->get("CPSTag");
 			$cpstag = str_replace("{cps}", $this->plugin->getCPS($players), $cpstag);
 			$cpstag = str_replace("&", "§", $cpstag);
 			$players->setScoreTag($cpstag);
