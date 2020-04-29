@@ -1,0 +1,6 @@
+---
+# CPSTag Configuation:
+# use § or & for color:
+
+CPSTag: "§3§lCPS: {cps}"
+...
