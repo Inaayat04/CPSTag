@@ -19,7 +19,6 @@ class Main extends PluginBase implements Listener {
 	public function onEnable(){
 		@mkdir($this->getDataFolder());
 		$this->saveDefaultConfig();
-		$this->config = new Config($this->getDataFolder() . "config.yml", Config::YAML);
 		$this->getServer()->getPluginManager()->registerEvents($this ,$this);
 		$this->getScheduler()->scheduleRepeatingTask(new CPSTagTask($this), 10);
 	}
