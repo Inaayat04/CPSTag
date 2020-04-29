@@ -15,6 +15,7 @@ use Inaayat\CPSTag\CPSTagTask;
 class Main extends PluginBase implements Listener {
 
 	private $clicks;
+	public $config;
 	
 	public function onEnable(){
 		@mkdir($this->getDataFolder());
